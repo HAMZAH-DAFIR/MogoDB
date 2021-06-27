@@ -14,7 +14,6 @@ const courseSchema = mongoose.Schema({
 
 const Course = mongoose.model('Course',courseSchema);
 //operators comparison
-    // $eq => equal
     // $neq => not equal
     // $gt => greater then 
     // $gte => greater then or equal
@@ -23,8 +22,8 @@ const Course = mongoose.model('Course',courseSchema);
     // $in  => in
     // $nin => not in
 // operators logic 
-    // and
-    // or
+
+    // 
 
 async function getCourses () {
     const courses = await Course.find({isPublished : false})
